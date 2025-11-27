@@ -1,0 +1,45 @@
+SERVICE AGREEMENT
+
+This Service Agreement (the "Agreement") is entered into as of January 1, 2024, by and between TechCorp Inc., a Delaware corporation ("Provider"), and Client Company LLC, a California limited liability company ("Client").
+
+1. SERVICES
+Provider shall provide software development and maintenance services to Client as described in Exhibit A attached hereto. Provider reserves the right to subcontract any portion of the services to third-party vendors.
+
+2. DATA SHARING AND PRIVACY
+Client acknowledges that Provider may share client data with third-party service providers for the purpose of providing the services. Provider shall implement reasonable security measures to protect client data. Client consents to the collection, use, and disclosure of personal information as described in Provider's privacy policy.
+
+3. TERM AND AUTO-RENEWAL
+This Agreement shall commence on the Effective Date and continue for a period of twelve (12) months. This Agreement shall automatically renew for successive one-year terms unless either party provides written notice of termination at least thirty (30) days prior to the end of the then-current term. The automatic renewal clause is irrevocable and binding upon both parties.
+
+4. PAYMENT TERMS
+Client shall pay Provider monthly fees as set forth in Exhibit B. All payments are due within fifteen (15) days of invoice date. Late payments shall incur a penalty of 1.5% per month.
+
+5. LIMITATION OF LIABILITY
+IN NO EVENT SHALL PROVIDER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR BUSINESS OPPORTUNITIES. PROVIDER'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT PAID BY CLIENT IN THE TWELVE MONTHS PRECEDING THE CLAIM.
+
+6. INDEMNIFICATION
+Client shall indemnify and hold harmless Provider from any claims arising from Client's use of the services or breach of this Agreement.
+
+7. CONFIDENTIALITY
+Both parties agree to maintain the confidentiality of proprietary information disclosed during the term of this Agreement. This obligation shall survive termination of the Agreement for a period of five (5) years.
+
+8. DISPUTE RESOLUTION
+Any disputes arising under this Agreement shall be resolved through mandatory binding arbitration in accordance with the rules of the American Arbitration Association. The parties waive their right to a jury trial and agree that arbitration shall be the exclusive method of dispute resolution.
+
+9. TERMINATION
+Either party may terminate this Agreement for material breach upon thirty (30) days written notice. Provider may terminate immediately if Client fails to pay amounts due. Upon termination, Client shall pay all amounts due and return all confidential information.
+
+10. GENERAL PROVISIONS
+This Agreement constitutes the entire agreement between the parties and supersedes all prior agreements. This Agreement may only be modified in writing signed by both parties. The Agreement shall be governed by the laws of the State of California.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+TechCorp Inc.
+By: ________________________
+Name: John Smith
+Title: CEO
+
+Client Company LLC
+By: ________________________
+Name: Jane Doe
+Title: President 

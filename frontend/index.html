@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Explainer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-gavel"></i>
+                    Legal Document Explainer
+                </h1>
+                <p class="subtitle">AI-powered legal document analysis and risk assessment</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-card">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>Upload Legal Document</h3>
+                        <p>Drag and drop your PDF or text file here, or click to browse</p>
+                        <input type="file" id="fileInput" accept=".pdf,.txt" hidden>
+                        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                            Choose File
+                        </button>
+                    </div>
+                    <div class="file-info" id="fileInfo" style="display: none;">
+                        <div class="file-details">
+                            <i class="fas fa-file-alt"></i>
+                            <span id="fileName"></span>
+                            <span id="fileSize"></span>
+                        </div>
+                        <button class="analyze-btn" id="analyzeBtn">
+                            <i class="fas fa-magic"></i>
+                            Analyze Document
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-card">
+                    <div class="loading-spinner">
+                        <i class="fas fa-cog fa-spin"></i>
+                    </div>
+                    <h3>Analyzing Document...</h3>
+                    <p>Our AI is processing your legal document to identify key clauses and assess risks.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <!-- Risk Score Card -->
+                <div class="risk-score-card">
+                    <div class="risk-header">
+                        <h3><i class="fas fa-shield-alt"></i> Risk Assessment</h3>
+                        <div class="risk-score" id="riskScore">
+                            <div class="score-circle">
+                                <span class="score-number" id="scoreNumber">0</span>
+                                <span class="score-label">Risk Score</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="risk-breakdown" id="riskBreakdown">
+                        <!-- Risk breakdown will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="summary-card">
+                    <h3><i class="fas fa-file-text"></i> Document Summary</h3>
+                    <div class="summary-content" id="summaryContent">
+                        <!-- Summary will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Clauses Card -->
+                <div class="clauses-card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Identified Clauses</h3>
+                    <div class="clauses-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="high">High Risk</button>
+                        <button class="filter-btn" data-filter="medium">Medium Risk</button>
+                        <button class="filter-btn" data-filter="low">Low Risk</button>
+                    </div>
+                    <div class="clauses-list" id="clausesList">
+                        <!-- Clauses will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Original Text Card -->
+                <div class="original-text-card">
+                    <h3><i class="fas fa-file-alt"></i> Original Document Text</h3>
+                    <div class="text-content" id="originalText">
+                        <!-- Original text with highlights will be populated here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Side Panel for Clause Details -->
+        <div class="side-panel" id="sidePanel">
+            <div class="side-panel-header">
+                <h3 id="sidePanelTitle">Clause Details</h3>
+                <button class="close-btn" onclick="closeSidePanel()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="side-panel-content" id="sidePanelContent">
+                <!-- Clause details will be populated here -->
+            </div>
+        </div>
+
+        <!-- Overlay for side panel -->
+        <div class="overlay" id="overlay" onclick="closeSidePanel()"></div>
+    </div>
+
+    <!-- Recommendations Modal -->
+    <div class="modal" id="recommendationsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-lightbulb"></i> Recommendations</h3>
+                <button class="close-btn" onclick="closeModal('recommendationsModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="recommendationsContent">
+                <!-- Recommendations will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> 
