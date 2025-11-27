@@ -73,4 +73,4 @@ Legal_Document_Explainer/
 - The frontend uses vanilla JavaScript for simplicity and performance
 
 
-## Live Link : https://legal-document-explainer-1.onrender.com/
+
